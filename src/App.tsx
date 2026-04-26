@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './components/ui/button';
-import { Server, ShieldCheck, Database, Terminal as TerminalIcon, Network, Activity, ChevronRight, Globe, Cloud, HardDrive, ShieldX, Route } from 'lucide-react';
+import { Server, ShieldCheck, Database, Terminal as TerminalIcon, Network, ChevronRight, Globe, Cloud, HardDrive, ShieldX, Route } from 'lucide-react';
 
 const GithubIcon = ({ className }: { className?: string }) => (
   <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
