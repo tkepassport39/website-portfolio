@@ -85,6 +85,31 @@
   box-shadow: 0 0 10px #0ea5e9;
 }
 
+@keyframes flow-vertical {
+  0% { top: 0; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; transform: translateY(-100%); }
+}
+
+.animate-data-flow-vertical {
+  position: absolute;
+  left: -2px;
+  width: 6px;
+  height: 15px;
+  border-radius: 10px;
+  background-color: #0ea5e9;
+  animation: flow-vertical 2s linear infinite;
+  box-shadow: 0 0 10px #0ea5e9;
+}
+
+@keyframes flow-vertical-up {
+  0% { bottom: 0; opacity: 0; transform: translateY(100%); }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { bottom: 100%; opacity: 0; transform: translateY(-100%); }
+}
+
 .gradient-text {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-[#0ea5e9] to-[#2563eb];
 }
